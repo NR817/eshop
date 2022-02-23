@@ -1,0 +1,43 @@
+//Base config
+@import '~normalize.css/normalize.css';
+@import './base/colors.scss';
+@import './base/fonts.scss';
+@import './base/mixins.scss';
+
+// External libraries
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.css';
+@import '~animate.css/animate.css';
+
+@import './base/configuration.scss';
+
+// Pages
+@import './apps/ngshop/pages/home-page.scss';
+@import './apps/ngshop/pages/products-list.scss';
+
+// Shared
+@import './apps/ngshop/shared/header.scss';
+@import './apps/ngshop/shared/nav.scss';
+@import './apps/ngshop/shared/footer.scss';
+
+// Libs
+@import './libs/ui/ui.scss';
+@import './libs/products/products.scss';
+@import './libs/orders/orders.scss';
+@import './libs/users/users.scss';
+
+.container {
+    width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: var(--surface-100);
+}
+
+.login-register { 
+    position: relative;
+}
+
+
+

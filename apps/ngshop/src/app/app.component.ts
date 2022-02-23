@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, OnInit } from '@angular/core';
+import { UsersService } from '@nr-space/users';
 
 @Component({
-  selector: 'nr-space-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'ngshop-root',
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  constructor(private usersService: UsersService) {}
   title = 'ngshop';
+
+  ngOnInit(): void {
+      this.usersService.initAppSession();
+  }
+
 }
