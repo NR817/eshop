@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiURL: 'http://localhost:4000/api/v1/'
+    apiURL: 'https://nrspace-eshop-backend.herokuapp.com/api/v1/'
 };
